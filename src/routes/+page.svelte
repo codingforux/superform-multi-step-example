@@ -5,6 +5,8 @@
 
 	let { data } = $props();
 
+	// superForm reads the initial form once by design.
+	// eslint-disable-next-line svelte/valid-compile
 	const { form, errors, message, enhance } = superForm(data.form);
 </script>
 
